@@ -1,6 +1,6 @@
 # Olist E-Commerce Sales & Operations Analytics
 
-A mini end-to-end Power BI project focused on **data modeling, Power Query transformations, Star Schema design, and DAX** using the Brazilian E-Commerce Public Dataset by Olist.
+A mini end-to-end Power BI project focused on **data modeling, Power Query transformations, Fact Constellation (Galaxy Schema) design, and DAX** using the Brazilian E-Commerce Public Dataset by Olist.
 
 > **Main Goal:** Apply dimensional modeling concepts in a realistic e-commerce dataset and build a clean analytical model before creating the dashboard.
 
@@ -12,7 +12,7 @@ A mini end-to-end Power BI project focused on **data modeling, Power Query trans
 - [Project Objective](#project-objective)
 - [Dataset](#dataset)
 - [Data Modeling Approach](#data-modeling-approach)
-- [Star Schema](#star-schema)
+- [Fact Constellation Schema](#fact-constellation-schema)
 - [Data Preparation](#data-preparation)
 - [Important Modeling Decisions](#important-modeling-decisions)
 - [DAX Measures](#dax-measures)
@@ -44,7 +44,7 @@ This project was created as a practical exercise to strengthen my understanding 
 - Dimensional Data Modeling
 - Grain definition
 - Fact and Dimension design
-- Star Schema
+- Fact Constellation / Galaxy Schema
 - Primary, Business, Foreign, and Surrogate Keys
 - Power Query / M transformations
 - Relationship design in Power BI
@@ -109,11 +109,11 @@ The review table was excluded from the final model because it was outside the sc
 
 ---
 
-## Star Schema
+## Fact Constellation Schema
 
-![Final Star Schema](images/after_data_modeling.png)
+![Final Fact Constellation Schema](images/after_data_modeling.png)
 
-The final model follows a **Star Schema** where fact tables store business events and measurements, while dimensions provide descriptive context for analysis.
+The final model follows a **Fact Constellation (Galaxy Schema)** where multiple fact tables represent different business processes and share common dimensions.
 
 ### Key Relationships
 
@@ -315,7 +315,7 @@ These findings demonstrate how the analytical model can be used to move from raw
 
 ![Before Data Modeling](images/before_data_modeling.png)
 
-### After — Analytical Star Schema
+### After — Analytical Fact Constellation Schema
 
 ![After Data Modeling](images/after_data_modeling.png)
 
@@ -422,7 +422,7 @@ The dashboard should then reproduce the analytical model and visuals shown in th
 - **M Language**
 - **DAX**
 - **Dimensional Modeling**
-- **Star Schema**
+- **Fact Constellation / Galaxy Schema**
 
 ---
 
