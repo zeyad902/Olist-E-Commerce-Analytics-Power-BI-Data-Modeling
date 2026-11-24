@@ -442,31 +442,6 @@ Olist-E-Commerce-Analytics/
     └── before_data_modeling.png
 ```
 
----
-
-## What I Learned
-
-This project helped me move from simply cleaning data and creating visuals to thinking about the **data model behind the analysis**.
-
-The main lesson was:
-
-> **Define the grain first. Then design the facts, dimensions, keys, and relationships around it.**
-
-I also gained practical experience dealing with:
-
-- Multiple grains
-- Surrogate keys
-- Business keys
-- Composite keys
-- Fact-to-fact separation
-- Role-based dimensions
-- Data quality issues
-- Power Query ETL
-- DAX measures
-- Analytical model validation
-
----
-
 ## Project Status
 
 **Completed — Mini Data Modeling Project**
